@@ -16,7 +16,12 @@ public class ProductController {
     private final DefaultTableModel mTableModel = new DefaultTableModel(
             new String[]{"Nama Produk", "Biaya Tenaga Kerja", "Efisiensi Produk", "Total Biaya Produksi"},
             0
-    );
+    ) {
+        @Override
+        public boolean isCellEditable(int row, int column) {
+            return false;
+        }
+    };
 
     public ProductController(ProductView view) {
         mView = view;
