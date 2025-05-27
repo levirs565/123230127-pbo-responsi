@@ -15,6 +15,29 @@ public class ProductDataSource implements ProductRepository {
         mConnection = connection;
     }
 
+    /*
+    Kode berikut:
+    try (var stmt = mConnection.prepareStatement(...)) {
+    ...
+    } catch(...) {
+    ...
+    }
+
+    Ini adalah fitur dari Java 8 (Kalau gak salah) dengan nama try-with-resource.
+    Kode ini ekuivalen dengan:
+
+    Statement stmt;
+    try {
+        stmt = mConnection.prepareStatement();
+        ...
+    } catch (...) {
+        ...
+    } finally {
+        if (stmt != null)
+            stmt.close(;
+    }
+     */
+
     @Override
     public List<Product> getAll() {
         var result = new ArrayList<Product>();
