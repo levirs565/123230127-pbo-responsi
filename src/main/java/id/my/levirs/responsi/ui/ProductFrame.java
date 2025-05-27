@@ -68,8 +68,11 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(25, 0), new java.awt.Dimension(25, 0), new java.awt.Dimension(25, 0));
         jLabel1 = new javax.swing.JLabel();
+        filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25));
         jPanel1 = new javax.swing.JPanel();
+        filler5 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0));
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -84,24 +87,40 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
         mBiayaBahanBakuField = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         mCreateButton = new javax.swing.JButton();
+        filler9 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0));
         mEditButton = new javax.swing.JButton();
+        filler8 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0));
         mDeleteButton = new javax.swing.JButton();
+        filler7 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
+        filler6 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
+        filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0));
         jScrollPane1 = new javax.swing.JScrollPane();
         mTable = new javax.swing.JTable();
+        filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.Y_AXIS));
 
+        filler1.setAlignmentX(0.0F);
+        getContentPane().add(filler1);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Pabrik Bela Negara");
         jLabel1.setMaximumSize(new java.awt.Dimension(2147483647, 16));
         getContentPane().add(jLabel1);
 
+        filler2.setAlignmentX(0.0F);
+        getContentPane().add(filler2);
+
         jPanel1.setAlignmentX(0.0F);
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.X_AXIS));
+        jPanel1.add(filler5);
 
+        jPanel2.setMinimumSize(new java.awt.Dimension(216, 0));
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
+        jPanel3.setMaximumSize(new java.awt.Dimension(2147483647, 135));
         java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
         jPanel3Layout.columnWidths = new int[] {20, 125};
         jPanel3.setLayout(jPanel3Layout);
@@ -207,6 +226,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
             }
         });
         jPanel4.add(mCreateButton);
+        jPanel4.add(filler9);
 
         mEditButton.setText("Edit");
         mEditButton.addActionListener(new java.awt.event.ActionListener() {
@@ -215,6 +235,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
             }
         });
         jPanel4.add(mEditButton);
+        jPanel4.add(filler8);
 
         mDeleteButton.setText("Delete");
         mDeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -223,10 +244,13 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
             }
         });
         jPanel4.add(mDeleteButton);
+        jPanel4.add(filler7);
 
         jPanel2.add(jPanel4);
+        jPanel2.add(filler6);
 
         jPanel1.add(jPanel2);
+        jPanel1.add(filler3);
 
         mTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -247,6 +271,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
         jScrollPane1.setViewportView(mTable);
 
         jPanel1.add(jScrollPane1);
+        jPanel1.add(filler4);
 
         getContentPane().add(jPanel1);
 
@@ -282,6 +307,15 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
     }//GEN-LAST:event_mTableMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.Box.Filler filler1;
+    private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler3;
+    private javax.swing.Box.Filler filler4;
+    private javax.swing.Box.Filler filler5;
+    private javax.swing.Box.Filler filler6;
+    private javax.swing.Box.Filler filler7;
+    private javax.swing.Box.Filler filler8;
+    private javax.swing.Box.Filler filler9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
