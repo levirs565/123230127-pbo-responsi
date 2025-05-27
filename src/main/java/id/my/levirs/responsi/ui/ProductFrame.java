@@ -68,7 +68,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(25, 0), new java.awt.Dimension(25, 0), new java.awt.Dimension(25, 0));
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(25, 25), new java.awt.Dimension(25, 25), new java.awt.Dimension(25, 25));
         jLabel1 = new javax.swing.JLabel();
         filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25), new java.awt.Dimension(0, 25));
         jPanel1 = new javax.swing.JPanel();
@@ -117,6 +117,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.X_AXIS));
         jPanel1.add(filler5);
 
+        jPanel2.setMaximumSize(new java.awt.Dimension(300, 2147483647));
         jPanel2.setMinimumSize(new java.awt.Dimension(216, 0));
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
@@ -276,6 +277,7 @@ public class ProductFrame extends javax.swing.JFrame implements ProductView {
         getContentPane().add(jPanel1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void mCreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mCreateButtonActionPerformed

@@ -58,7 +58,9 @@ public class ProductController {
 
     private int parseIntThrowable(String str, String nama) throws ControllerException {
         try {
-            return Integer.parseInt(str);
+            var result = Integer.parseInt(str);
+            if (result <= 0) throw new ControllerException(String.format("%s tidak boleh kurang dari 1", nama));
+            return result;
         } catch (NumberFormatException e) {
             throw new ControllerException(String.format("%s bukan angka valid", nama));
         }
